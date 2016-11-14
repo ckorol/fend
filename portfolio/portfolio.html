@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ckorol Portfolio</title>
+
+    <!-- My own styles -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="css/phone.css" rel="stylesheet">
+    <link href="css/tablet.css" rel="stylesheet">
+    <link href="css/monitor.css" rel="stylesheet"> -->
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito%7COxygen%7CPT+Sans%7CUbuntu%7CLato" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="flex-container">
+      <div class="flex-item">
+        <img class="logo" src="images/logo.svg" alt="logo">
+        <!-- alt=Intentionally left out b/c this image is not meaningful for screen reader -->
+      </div>
+      <div class="flex-item right dba-name">
+        <h1>ProHome</h1>
+        <h3>App for housekeepers</h3>
+      </div>
+    </header>
+    <hr>
+    <!-- TODO Add overlay and call to action -->
+    <section class="hero">
+      <!-- Art direction for hero image -->
+      <picture>
+        <!-- For monitors -->
+        <source
+          media="(min-width: 1250px)"
+          srcset="images/537268118_2000_75pct.jpg 2000w, images/537268118_1250_75pct.jpg 1250w"
+          sizes="100vw">
+        <!-- For tablets -->
+        <source
+          media="(min-width: 800px)"
+          srcset="images/537268118_1275_60pct.jpg 1275w, images/537268118_1445_60pct.jpg 1445w, images/537268118_1700_60pct.jpg 1450w"
+          sizes="100vw">
+        <!-- For phnes and fallback -->
+        <img src="537268118_1235_50pct.jpg"
+          alt="Relaxed maid having coffee and looking at phone"
+          srcset="images/537268118_679_50pct.jpg 679w, images/537268118_988_50pct.jpg 988w, images/537268118_1235_50pct.jpg 1235w"
+          sizes="100vw">
+      </picture>
+    </section>
+    <section class="features">
+      <h2>See how ProHome can help your cleaning business!</h2>
+      <div class="flex-container">
+        <article class="flex-item">
+          <img src="images/grunt_out/171330071-670.jpg"
+            srcset="images/grunt_out/171330071-335.jpg 335w, images/grunt_out/171330071-670.jpg 670w, images/grunt_out/171330071-1005.jpg 1005w"
+            sizes="(min-width: 1250px) 400px, (min-width: 800px) 32vw, (min-width: 500px) 49vw, 100vw"
+            alt="Housecleaner opening door">
+          <h3>Unlock your earning potential</h3>
+          <p>Earn extra income from the households you're already visiting — without doing extra work!  All you have to do is open the door. <a href="http://github.com">Learn more</a></p>
+        </article>
+        <article class="flex-item">
+          <img src="images/grunt_out/104218662-670.jpg"
+            srcset="images/grunt_out/104218662-335.jpg 335w, images/grunt_out/104218662-670.jpg 670w, images/grunt_out/104218662-1005.jpg 1005w"
+            sizes="(min-width: 1250px) 400px, (min-width: 800px) 32vw, (min-width: 500px) 49vw, 100vw"
+            alt="Lady handing cash">
+          <h3>Make more money</h3>
+          <p>Take home more pay without taking on more risk.  No-show's are no problem. <a href="http://github.com">Learn more</a></p>
+        </article>
+        <article class="flex-item">
+          <img src="images/grunt_out/174956453-670.jpg"
+            srcset="images/grunt_out/174956453-335.jpg 335w, images/grunt_out/174956453-670.jpg 670w, images/grunt_out/174956453-1005.jpg 1005w"
+            sizes="(min-width: 1250px) 400px, (min-width: 800px) 32vw, (min-width: 500px) 49vw, 100vw"
+            alt="Smiling homeowners">
+          <h3>Keep your clients happy</h3>
+          <p>Homeowners will be glad to pay more and stay loyal customers for life. <a href="http://github.com">Learn more</a></p>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
